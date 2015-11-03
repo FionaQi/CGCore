@@ -3,6 +3,9 @@
 *.lo
 *.o
 *.obj
+*.vcxproj
+*.vcxproj.filters
+Debug/
 
 # Precompiled Headers
 *.gch
