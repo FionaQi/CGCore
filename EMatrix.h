@@ -70,8 +70,8 @@ namespace E3D {
 		inline EMatrix44 operator*(const EMatrix44& right) const {
 			EMatrix44 temp;
 			for (EInt i = 0; i < 4; i++) {
-				for (EInt j = 0; j < 4; j++) {
-					for (EInt k = 0; k < 4; k++) {
+				for (EInt k = 0; k < 4; k++) {
+					for (EInt j = 0; j < 4; j++) {
 						temp.m[i][j] += m[i][k] * right.m[k][j];
 					}
 				}
