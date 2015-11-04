@@ -24,6 +24,7 @@ namespace E3D {
 		HBITMAP hBitmap;
 		BITMAP	bitmap;
 		HDC		bitmapHDC;
+	public:
 		EColor	*pixels;
 		EInt	pitch;
 	};
