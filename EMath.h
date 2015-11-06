@@ -1,9 +1,12 @@
+#pragma once
+
 #include "ECommon.h"
 #include "EVector.h"
 
 namespace E3D {
-	inline EFloat Clamp(EFloat val, EFloat Min, EFloat Max) {
-		return max(min(val, Min), Max);
+	template<typename T>
+	const T& Clamp(const T& val, const T& minV, const T& maxV) {
+		return min(max(val, maxV), minV);
 	}
 
 	void GetTranslateMatrix44(EMatrix44& mat, EFloat x, EFloat y, EFloat z);
